@@ -1,58 +1,23 @@
 let nickName;
 let i;
 
+const excuses = [
+    "Can't tonight, I'm out with work",
+    "Can't tonight, I've got the shits",
+    "Can't tonight, I'm having my hair cut",
+    "Can't tonight, I'm having a wank",
+    "Can't tonight, I'm watching a movie",
+    "Can't tonight, I'm watching paint dry",
+    "Can't tonight, I'm cuddling Milo",
+    "Can't tonight, I'm cuddling Merlin",
+    "Can't tonight, I'm cuddling Alfie",
+    "Can't tonight, I'm being anti-social, the government told me to"
+];
+
 const randomExcuse = () => {
     let j = Math.floor(Math.random() * 10);
-    if(j == 1) {
-        alert(`${nickName} "Can't tonight, I'm out with work"`);
-        location = location;
-    } else {
-        if(j == 2) {
-            alert(`${nickName} "Can't tonight, I've got the shits"`);
-            location = location;
-        } else{
-            if(j == 3) {
-                alert(`${nickName} "Can't tonight, I'm having my hair cut"`);
-                location = location;
-            } else {
-                if(j == 4) {
-                    alert(`${nickName} "Can't tonight, I'm having a wank"`);
-                    location = location;
-                } else {
-                    if(j == 5) {
-                        alert(`${nickName} "Can't tonight, I'm watching a movie"`);
-                        location = location;
-                    } else {
-                        if(j == 6) {
-                            alert(`${nickName} "Can't tonight, I'm watching paint dry"`);
-                            location = location;
-                        } else {
-                            if(j == 7) {
-                                alert(`${nickName} "Can't tonight, I'm cuddling Milo"`);
-                                location = location;
-                            } else {
-                                if(j == 8) {
-                                    alert(`${nickName} "Can't tonight, I'm cuddling Merlin"`);
-                                    location = location;
-                                } else {
-                                    if(j == 9) {
-                                        alert(`${nickName} "Can't tonight, I'm cuddling Alfie"`);
-                                        location = location;
-                                    } else {
-                                        if(j == 10) {
-                                            alert(`${nickName} "Can't tonight, I'm being anti-social, the government told me to"`);
-                                            location = location;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+    alert(`${nickName} "${excuses[j]}"`);
+    location = location;
 
 const goingOut = () => {
     alert(`${playerName}: "${nickName} do you want to go out tonight?`);
